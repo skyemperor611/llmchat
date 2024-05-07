@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ChatGPT 3.5</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div id="container">
+        <div id="sidebar">
+            <button id="new-chat-button">새로운 대화</button>
+            <ul>
+                <li>User's Success Commitment</li>
+                <li>Effortful Cliff Drawing</li>
+                <li>Word Cloud Options 설정</li>
+                <li>보안적인 API 키 관리</li>
+                <li>Manga Illustration: Longing Mem</li>
+                <li>Key Performance Metrics Optimi</li>
+                <li>Css 텍스트 줄바꿈 설정</li>
+                <li>새 채팅</li>
+                <li>KPI 오류해결하기</li>
+                <li>KPI 성과 분석 및 개선</li>
+                <li>로딩 오버레이 수정</li>
+                <li>성의 없사 구분</li>
+                <li>지표 및 계산 방법</li>
+            </ul>
+            <select id="model-select">
+                <option value="gpt-4-turbo-2024-04-09">GPT-4-turbo-2024-04-09</option>
+                <option value="gpt-3.5-turbo-0125">GPT-3.5-turbo-0125</option>
+            </select>        </div>
+        <div id="chat-area">
+            <h1>ChatGPT</h1>
+            <div id="chat-history"></div>
+            <div id="input-container">
+                <div class="message assistant">
+                    오늘은 무엇을 도와드릴까요?
+                </div>
+            </div>
+            <div id="input-container">
+                <div id="input-features">
+                    <span>여행 일정 계획</span>
+                    <span>스프레드시트 수식 작성</span>
+                    <span>설계 원칙 비교</span>
+                    <span>코바입앤 테스크를 소프트웨어의</span>
+                </div>
+                <div id="input-area">
+                    <textarea id="user-input" rows="1" placeholder="메시지 내용: ChatGPT"></textarea>
+                    <button id="send-button">전송</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</html>
